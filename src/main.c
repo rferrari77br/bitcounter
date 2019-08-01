@@ -1,17 +1,24 @@
-/* Contador de palavras
+/* Contador de bits
  *
- * Este programa recebera uma serie de caracteres representando palavras em sua
- * entrada. Ao receber um caractere fim de linha ('\n'), deve imprimir na tela o
- * numero de palavras separadas que recebeu e, apos, encerrar.
+ * Este programa conta o numero de bits em um byte
  */
 
 #include <stdio.h>
 
 int main() {
 
-  int x, y;
+  unsigned char entrada;
+  unsigned int tmp;
+  unsigned int n_bits;
 
-  scanf("%d %d\n", &x, &y);
-  printf("%d\n", x + 200);
+  /* Ler entrada em hexadecimal */
+  scanf("%x", &tmp);
+  entrada = (unsigned char)tmp;
+
+
+  n_bits = 0;
+
+  /* Escrever numero de bits */
+  printf("%d\n", n_bits);
   return 0;
 }
