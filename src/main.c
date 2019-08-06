@@ -17,6 +17,7 @@ int main() {
 
 
   n_bits = 0;
+  n_bits++;
 
   /* Escrever numero de bits */
   printf("%d\n", n_bits);
